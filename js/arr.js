@@ -1,4 +1,4 @@
-function findBooty(canvas)
+function findBooty(canvas, compass)
 {
 
     var seed = Math.floor(100000 + Math.random() * 900000);
@@ -606,4 +606,5 @@ function findBooty(canvas)
 		}
 	}
 	gfx.putImageData(bitmap, 0, 0);
+    compass.style.opacity = "1.0";
 }
